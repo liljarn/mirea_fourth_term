@@ -57,7 +57,7 @@ public class HumanStreamTest {
                 new Human(45, "Alexey", "Frolov", LocalDate.of(1979, Month.JANUARY, 9), 101)
         ));
     }
-
+    
     @Test
     @DisplayName("concatNamesStreamTest")
     public void concatNamesStream_shouldReturnStringOfAllNames() {
