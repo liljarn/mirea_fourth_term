@@ -8,25 +8,25 @@ import java.util.stream.Collectors;
 
 @UtilityClass
 public class HumanStream {
-    public static void reversedNameSort(List<Human> humanList) {
-        humanList
+    public static List<Human> reversedNameSortStream(List<Human> humanList) {
+        return humanList
                 .stream()
                 .sorted(Comparator.comparing(Human::firstName).reversed())
-                .forEach(System.out::println);
+                .toList();
     }
 
-    public static void filterStream(List<Human> humanList) {
-        humanList
+    public static List<Human> filterStream(List<Human> humanList) {
+        return humanList
                 .stream()
                 .filter(human -> human.age() > 20)
-                .forEach(System.out::println);
+                .toList();
     }
 
-    public static void firstThreeStream(List<Human> humanList) {
-        humanList
+    public static List<Human> firstThreeStream(List<Human> humanList) {
+        return humanList
                 .stream()
                 .limit(3)
-                .forEach(System.out::println);
+                .toList();
     }
 
     public static String concatNamesStream(List<Human> humanList) {
