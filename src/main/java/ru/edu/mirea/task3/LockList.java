@@ -1,14 +1,12 @@
 package ru.edu.mirea.task3;
 
-import lombok.SneakyThrows;
-
 import java.util.*;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
 public class LockList<E> implements List<E> {
     private final List<E> list;
-    private Lock lock = new ReentrantLock();
+    private final Lock lock = new ReentrantLock();
 
     public LockList() {
         this.list = new ArrayList<>();
