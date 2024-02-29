@@ -4,12 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7eb7a936-546c-46bf-af7c-caae1e7b2183" name="Changes" comment="pattern builder">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/edu/mirea/task6/factory_method/GameItem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/edu/mirea/task6/factory_method/GemReward.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/edu/mirea/task6/factory_method/GoldReward.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/edu/mirea/task6/factory_method/ItemGenerator.java" afterDir="false" />
+    <list default="true" id="7eb7a936-546c-46bf-af7c-caae1e7b2183" name="Changes" comment="added prototype">
+      <change afterPath="$PROJECT_DIR$/src/test/java/ru/edu/mirea/task6/AbstractFactoryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ru/edu/mirea/task6/BuilderTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ru/edu/mirea/task6/FactoryMethodTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ru/edu/mirea/task6/PrototypeTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/edu/mirea/task6/prototype/Project.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/edu/mirea/task6/prototype/Project.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/edu/mirea/task6/prototype/ProjectFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/edu/mirea/task6/prototype/ProjectFactory.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,21 +80,8 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.Test">
-    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ru.edu.mirea.task6.factory_method.Test" />
-      <module name="MireaTerm4.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ru.edu.mirea.task6.factory_method.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LockListTest.abob" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.PrototypeTest.prototypeTest">
+    <configuration name="AbstractFactoryTest.abob" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -105,7 +94,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;ru.edu.mirea.task3.LockListTest.abob&quot;" />
+            <option value="&quot;ru.edu.mirea.task6.AbstractFactoryTest.abob&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -116,7 +105,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="LockListTest.aboba (1)" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="AbstractFactoryTest.aboba" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -129,7 +118,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;ru.edu.mirea.task3.LockListTest.aboba&quot;" />
+            <option value="&quot;ru.edu.mirea.task6.AbstractFactoryTest.aboba&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -140,7 +129,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="SynchronizedSetTest.abob" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="BuilderTest.aboba" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -153,7 +142,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;ru.edu.mirea.task3.SynchronizedSetTest.abob&quot;" />
+            <option value="&quot;ru.edu.mirea.task6.BuilderTest.aboba&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -164,7 +153,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="SynchronizedSetTest.aboba" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="FactoryMethodTest.gemRewardGeneratorTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -177,7 +166,31 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;ru.edu.mirea.task3.SynchronizedSetTest.aboba&quot;" />
+            <option value="&quot;ru.edu.mirea.task6.FactoryMethodTest.gemRewardGeneratorTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="PrototypeTest.prototypeTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;ru.edu.mirea.task6.PrototypeTest.prototypeTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -190,11 +203,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Test" />
-        <item itemvalue="Gradle.SynchronizedSetTest.aboba" />
-        <item itemvalue="Gradle.SynchronizedSetTest.abob" />
-        <item itemvalue="Gradle.LockListTest.aboba (1)" />
-        <item itemvalue="Gradle.LockListTest.abob" />
+        <item itemvalue="Gradle.PrototypeTest.prototypeTest" />
+        <item itemvalue="Gradle.BuilderTest.aboba" />
+        <item itemvalue="Gradle.AbstractFactoryTest.abob" />
+        <item itemvalue="Gradle.AbstractFactoryTest.aboba" />
+        <item itemvalue="Gradle.FactoryMethodTest.gemRewardGeneratorTest" />
       </list>
     </recent_temporary>
   </component>
@@ -219,6 +232,7 @@
       <workItem from="1708582480089" duration="5945000" />
       <workItem from="1708628921747" duration="65000" />
       <workItem from="1709146699851" duration="7417000" />
+      <workItem from="1709186567100" duration="1586000" />
     </task>
     <task id="LOCAL-00001" summary="task2 done">
       <option name="closed" value="true" />
@@ -268,7 +282,23 @@
       <option name="project" value="LOCAL" />
       <updated>1709108591480</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="added abstract factory">
+      <option name="closed" value="true" />
+      <created>1709176837742</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1709176837742</updated>
+    </task>
+    <task id="LOCAL-00008" summary="added prototype">
+      <option name="closed" value="true" />
+      <created>1709177320801</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1709177320801</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -292,7 +322,9 @@
     <MESSAGE value="task3 done" />
     <MESSAGE value="added 3 singletones" />
     <MESSAGE value="pattern builder" />
-    <option name="LAST_COMMIT_MESSAGE" value="pattern builder" />
+    <MESSAGE value="added abstract factory" />
+    <MESSAGE value="added prototype" />
+    <option name="LAST_COMMIT_MESSAGE" value="added prototype" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -301,6 +333,11 @@
           <url>file://$PROJECT_DIR$/src/main/java/ru/edu/mirea/Main.java</url>
           <line>15</line>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/ru/edu/mirea/task6/PrototypeTest.java</url>
+          <line>14</line>
+          <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
