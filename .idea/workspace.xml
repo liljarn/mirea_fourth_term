@@ -4,13 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7eb7a936-546c-46bf-af7c-caae1e7b2183" name="Changes" comment="task3 done">
-      <change afterPath="$PROJECT_DIR$/src/test/java/ru/edu/mirea/task3/LockListTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ru/edu/mirea/task3/SynchronizedSetTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="7eb7a936-546c-46bf-af7c-caae1e7b2183" name="Changes" comment="pattern builder">
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/edu/mirea/task6/factory_method/GameItem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/edu/mirea/task6/factory_method/GemReward.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/edu/mirea/task6/factory_method/GoldReward.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/edu/mirea/task6/factory_method/ItemGenerator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/edu/mirea/task3/LockList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/edu/mirea/task3/LockList.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,6 +40,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Record" />
+        <option value="package-info" />
+        <option value="Enum" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -48,7 +50,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="task2" />
+        <entry key="$PROJECT_DIR$" value="hw5" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -67,7 +69,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;task3&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;hw6&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -76,30 +78,19 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Gradle.LockListTest">
-    <configuration name="LockListTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;ru.edu.mirea.task3.LockListTest&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
+  <component name="RunManager" selected="Application.Test">
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ru.edu.mirea.task6.factory_method.Test" />
+      <module name="MireaTerm4.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.edu.mirea.task6.factory_method.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration name="LockListTest.abob" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
@@ -199,11 +190,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.LockListTest" />
-        <item itemvalue="Gradle.SynchronizedSetTest.abob" />
+        <item itemvalue="Application.Test" />
         <item itemvalue="Gradle.SynchronizedSetTest.aboba" />
-        <item itemvalue="Gradle.LockListTest.abob" />
+        <item itemvalue="Gradle.SynchronizedSetTest.abob" />
         <item itemvalue="Gradle.LockListTest.aboba (1)" />
+        <item itemvalue="Gradle.LockListTest.abob" />
       </list>
     </recent_temporary>
   </component>
@@ -227,6 +218,7 @@
       <workItem from="1708567143832" duration="63000" />
       <workItem from="1708582480089" duration="5945000" />
       <workItem from="1708628921747" duration="65000" />
+      <workItem from="1709146699851" duration="7417000" />
     </task>
     <task id="LOCAL-00001" summary="task2 done">
       <option name="closed" value="true" />
@@ -260,7 +252,23 @@
       <option name="project" value="LOCAL" />
       <updated>1708586757308</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="added 3 singletones">
+      <option name="closed" value="true" />
+      <created>1709107011566</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1709107011567</updated>
+    </task>
+    <task id="LOCAL-00006" summary="pattern builder">
+      <option name="closed" value="true" />
+      <created>1709108591480</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1709108591480</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -282,7 +290,9 @@
     <MESSAGE value="added tests" />
     <MESSAGE value="small changes" />
     <MESSAGE value="task3 done" />
-    <option name="LAST_COMMIT_MESSAGE" value="task3 done" />
+    <MESSAGE value="added 3 singletones" />
+    <MESSAGE value="pattern builder" />
+    <option name="LAST_COMMIT_MESSAGE" value="pattern builder" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
