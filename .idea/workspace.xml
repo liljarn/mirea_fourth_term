@@ -4,11 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7eb7a936-546c-46bf-af7c-caae1e7b2183" name="Changes" comment="task3 done">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/edu/mirea/task4/ExecutorServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ru/edu/mirea/task4/ExecutorServiceImplTest.java" afterDir="false" />
+    <list default="true" id="7eb7a936-546c-46bf-af7c-caae1e7b2183" name="Changes" comment="added prototype">
+      <change afterPath="$PROJECT_DIR$/src/test/java/ru/edu/mirea/task6/AbstractFactoryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ru/edu/mirea/task6/BuilderTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ru/edu/mirea/task6/FactoryMethodTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ru/edu/mirea/task6/PrototypeTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/edu/mirea/task6/prototype/Project.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/edu/mirea/task6/prototype/Project.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/edu/mirea/task6/prototype/ProjectFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/edu/mirea/task6/prototype/ProjectFactory.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,6 +42,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Record" />
+        <option value="package-info" />
+        <option value="Enum" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -46,7 +52,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="task2" />
+        <entry key="$PROJECT_DIR$" value="hw5" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -60,6 +66,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;hw6&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/liljarn/IdeaProjects/MireaTerm4/src/main/java/ru/edu/mirea/Main.java&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RunManager" selected="Gradle.PrototypeTest.prototypeTest">
+    <configuration name="AbstractFactoryTest.abob" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
@@ -89,7 +111,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;ru.edu.mirea.task4.ExecutorServiceImplTest.testExecuteTask&quot;" />
+            <option value="&quot;ru.edu.mirea.task6.AbstractFactoryTest.abob&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -100,7 +122,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="LockListTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="AbstractFactoryTest.aboba" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -113,7 +135,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;ru.edu.mirea.task3.LockListTest&quot;" />
+            <option value="&quot;ru.edu.mirea.task6.AbstractFactoryTest.aboba&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -124,7 +146,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="LockListTest.abob" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="BuilderTest.aboba" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -137,7 +159,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;ru.edu.mirea.task3.LockListTest.abob&quot;" />
+            <option value="&quot;ru.edu.mirea.task6.BuilderTest.aboba&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -148,7 +170,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="SynchronizedSetTest.abob" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="FactoryMethodTest.gemRewardGeneratorTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -161,7 +183,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;ru.edu.mirea.task3.SynchronizedSetTest.abob&quot;" />
+            <option value="&quot;ru.edu.mirea.task6.FactoryMethodTest.gemRewardGeneratorTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -172,7 +194,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="SynchronizedSetTest.aboba" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="PrototypeTest.prototypeTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -185,7 +207,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;ru.edu.mirea.task3.SynchronizedSetTest.aboba&quot;" />
+            <option value="&quot;ru.edu.mirea.task6.PrototypeTest.prototypeTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -198,11 +220,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.ExecutorServiceImplTest.testExecuteTask" />
-        <item itemvalue="Gradle.LockListTest" />
-        <item itemvalue="Gradle.SynchronizedSetTest.abob" />
-        <item itemvalue="Gradle.SynchronizedSetTest.aboba" />
-        <item itemvalue="Gradle.LockListTest.abob" />
+        <item itemvalue="Gradle.PrototypeTest.prototypeTest" />
+        <item itemvalue="Gradle.BuilderTest.aboba" />
+        <item itemvalue="Gradle.AbstractFactoryTest.abob" />
+        <item itemvalue="Gradle.AbstractFactoryTest.aboba" />
+        <item itemvalue="Gradle.FactoryMethodTest.gemRewardGeneratorTest" />
       </list>
     </recent_temporary>
   </component>
@@ -226,6 +248,8 @@
       <workItem from="1708567143832" duration="63000" />
       <workItem from="1708582480089" duration="5945000" />
       <workItem from="1708628921747" duration="65000" />
+      <workItem from="1709146699851" duration="7417000" />
+      <workItem from="1709186567100" duration="1586000" />
     </task>
     <task id="LOCAL-00001" summary="task2 done">
       <option name="closed" value="true" />
@@ -259,7 +283,39 @@
       <option name="project" value="LOCAL" />
       <updated>1708586757308</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="added 3 singletones">
+      <option name="closed" value="true" />
+      <created>1709107011566</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1709107011567</updated>
+    </task>
+    <task id="LOCAL-00006" summary="pattern builder">
+      <option name="closed" value="true" />
+      <created>1709108591480</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1709108591480</updated>
+    </task>
+    <task id="LOCAL-00007" summary="added abstract factory">
+      <option name="closed" value="true" />
+      <created>1709176837742</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1709176837742</updated>
+    </task>
+    <task id="LOCAL-00008" summary="added prototype">
+      <option name="closed" value="true" />
+      <created>1709177320801</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1709177320801</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -293,7 +349,11 @@
     <MESSAGE value="added tests" />
     <MESSAGE value="small changes" />
     <MESSAGE value="task3 done" />
-    <option name="LAST_COMMIT_MESSAGE" value="task3 done" />
+    <MESSAGE value="added 3 singletones" />
+    <MESSAGE value="pattern builder" />
+    <MESSAGE value="added abstract factory" />
+    <MESSAGE value="added prototype" />
+    <option name="LAST_COMMIT_MESSAGE" value="added prototype" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -302,6 +362,11 @@
           <url>file://$PROJECT_DIR$/src/main/java/ru/edu/mirea/Main.java</url>
           <line>15</line>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/ru/edu/mirea/task6/PrototypeTest.java</url>
+          <line>14</line>
+          <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
