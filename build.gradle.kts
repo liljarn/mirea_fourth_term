@@ -22,7 +22,28 @@ dependencies {
     testImplementation("org.junit.jupiter:junit-jupiter-params:5.10.2")
     // https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-core
     implementation("org.apache.logging.log4j:log4j-core:2.23.0")
+}
 
+tasks.jar {
+    manifest {
+        attributes(
+            mapOf(
+                "Main-Class" to "ru.edu.mirea.task9.Hello"
+            )
+        )
+    }
+    finalizedBy("copyJarToDockerDirectory");
+}
+
+tasks.register<Copy>("copyJarToDockerDirectory") {
+    from("build/libs/MireaTerm4-1.0-SNAPSHOT.jar")
+    into("${rootDir}/src/main/java/ru/edu/mirea/task9/")
+    finalizedBy("buildDockerImage");
+}
+
+tasks.register<Exec>("buildDockerImage") {
+    dependsOn("copyJarToDockerDirectory")
+    commandLine("docker", "build", "-t", "mirea", "./src/main/java/ru/edu/mirea/task9/")
 }
 
 tasks.test {
