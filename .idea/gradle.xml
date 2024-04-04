@@ -12,6 +12,23 @@
           </set>
         </option>
       </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/task11" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/task11" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/task14" />
+        <option name="gradleHome" value="" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/task14" />
+          </set>
+        </option>
+      </GradleProjectSettings>
     </option>
   </component>
 </project>
