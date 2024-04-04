@@ -5,47 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7eb7a936-546c-46bf-af7c-caae1e7b2183" name="Changes" comment="added homework">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task11/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task11/build.gradle.kts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task11/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task11/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task11/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task11/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task11/settings.gradle.kts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task11/src/main/java/ru/mirea/task11/Task11Application.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task11/src/main/java/ru/mirea/task12/AppStarter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task11/src/main/java/ru/mirea/task12/FileWriter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task11/src/main/java/ru/mirea/task12/Hasher.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task11/src/main/java/ru/mirea/task12/configuration/ArgsConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task11/src/main/java/ru/mirea/task13/AppStarter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task11/src/main/java/ru/mirea/task13/ValuePrinter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task11/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task11/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task11/src/main/resources/task12/testHashed.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task11/src/test/java/ru/mirea/task11/Task11ApplicationTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task14/build.gradle.kts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task14/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task14/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task14/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task14/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task14/settings.gradle.kts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task14/src/main/java/ru/mirea/AppStarter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task14/src/main/java/ru/mirea/controller/AddressController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task14/src/main/java/ru/mirea/controller/BuildingController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task14/src/main/java/ru/mirea/controller/PageController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task14/src/main/java/ru/mirea/dto/AddAddressRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task14/src/main/java/ru/mirea/dto/AddBuildingRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task14/src/main/java/ru/mirea/dto/AddressResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task14/src/main/java/ru/mirea/dto/BuildingResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task14/src/main/java/ru/mirea/dto/RemoveAddressRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task14/src/main/java/ru/mirea/dto/RemoveBuildingRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task14/src/main/java/ru/mirea/service/AddressService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task14/src/main/java/ru/mirea/service/BuildingService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task14/src/main/resources/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task14/compose.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task14/src/main/java/ru/mirea/dao/entity/AddressEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task14/src/main/java/ru/mirea/dao/entity/BuildingEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task14/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task14/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/task14/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task14/src/main/java/ru/mirea/dto/BuildingResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/task14/src/main/java/ru/mirea/dto/BuildingResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task14/src/main/java/ru/mirea/service/AddressService.java" beforeDir="false" afterPath="$PROJECT_DIR$/task14/src/main/java/ru/mirea/service/AddressService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,6 +66,7 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
   <component name="KotlinScriptingSettings">
     <scriptDefinition className="org.jetbrains.kotlin.scripting.resolve.KotlinScriptDefinitionFromAnnotatedTemplate" definitionName="KotlinBuildScript">
@@ -128,7 +96,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "hw9",
+    "git-widget-placeholder": "main",
     "jdk.selected.JAVA_MODULE": "jbr-17",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -139,8 +107,13 @@
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
     "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
+    ]
   }
 }]]></component>
   <component name="RecentsManager">
@@ -198,10 +171,6 @@
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
-    </configuration>
-    <configuration name="task11-0.0.1-SNAPSHOT-plain.jar" type="JarApplication" temporary="true">
-      <option name="JAR_PATH" value="$PROJECT_DIR$/task11/build/libs/task11-0.0.1-SNAPSHOT-plain.jar" />
-      <method v="2" />
     </configuration>
     <configuration name="AppStarter (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="task11.main" />
@@ -270,19 +239,38 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
+      <deployment type="docker-compose.yml">
+        <settings />
+      </deployment>
+      <method v="2" />
+    </configuration>
     <configuration default="true" type="docker-deploy" factoryName="dockerfile" temporary="true">
       <deployment type="dockerfile">
         <settings />
       </deployment>
       <method v="2" />
     </configuration>
+    <configuration name="task14/compose.yml.postgresql: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="postgresql" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="task14/compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.AppStarter (2)" />
+        <item itemvalue="Docker.task14/compose.yml.postgresql: Compose Deployment" />
         <item itemvalue="Spring Boot.AppStarter (1)" />
         <item itemvalue="Application.ru.mirea.Main" />
         <item itemvalue="Application.ru.mirea.task12.Main" />
-        <item itemvalue="JAR Application.task11-0.0.1-SNAPSHOT-plain.jar" />
       </list>
     </recent_temporary>
   </component>
@@ -303,6 +291,7 @@
       <workItem from="1712114326892" duration="1380000" />
       <workItem from="1712177470783" duration="22592000" />
       <workItem from="1712213434047" duration="1361000" />
+      <workItem from="1712217867592" duration="43000" />
     </task>
     <task id="LOCAL-00001" summary="task2 done">
       <option name="closed" value="true" />
@@ -354,6 +343,9 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/task11" />
+    </ignored-roots>
     <MESSAGE value="task2 done" />
     <MESSAGE value="added tests" />
     <MESSAGE value="small changes" />
