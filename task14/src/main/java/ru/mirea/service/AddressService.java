@@ -3,6 +3,7 @@ package ru.mirea.service;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.log4j.Log4j2;
 import org.hibernate.Session;
+import org.springframework.orm.hibernate5.LocalSessionFactoryBean;
 import org.springframework.stereotype.Service;
 import ru.mirea.dao.entity.AddressEntity;
 import ru.mirea.dto.AddAddressRequest;
@@ -16,11 +17,11 @@ import java.util.List;
 @Log4j2
 @RequiredArgsConstructor
 public class AddressService {
-//    private final Session session;
+    private final Session session;
 
     public void addAddress(AddAddressRequest request) {
         AddressEntity address = new AddressEntity(request.addressText(), request.zipCode());
-
+        session.persist(address);
         log.info("ADDRESS ADDED");
     }
 
