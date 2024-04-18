@@ -16,17 +16,27 @@ public class BuildingController {
     private final BuildingService buildingService;
 
     @PostMapping
-    public void addBuilding(@RequestBody AddBuildingRequest request) {
-        buildingService.addBuilding(request);
+    public BuildingResponse addBuilding(@RequestBody AddBuildingRequest request) {
+        return buildingService.addBuilding(request);
     }
 
     @DeleteMapping
-    public void deleteBuilding(@RequestBody RemoveBuildingRequest request) {
-        buildingService.removeBuilding(request);
+    public BuildingResponse deleteBuilding(@RequestBody RemoveBuildingRequest request) {
+        return buildingService.removeBuilding(request);
     }
 
     @GetMapping
     public List<BuildingResponse> getBuildings() {
         return buildingService.getBuildings();
+    }
+
+    @GetMapping("/filtered")
+    public List<BuildingResponse> getBuildingsFiltered(@RequestParam String filteredBy, @RequestParam String value) {
+        return buildingService.getBuildingsFiltered(filteredBy, value);
+    }
+
+    @GetMapping("/{id}")
+    public BuildingResponse getBuildingById(@PathVariable Long id) {
+        return buildingService.getBuildingById(id);
     }
 }

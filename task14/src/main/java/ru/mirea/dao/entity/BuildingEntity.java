@@ -4,6 +4,8 @@ import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import ru.mirea.dto.AddBuildingRequest;
+import ru.mirea.dto.BuildingResponse;
 
 import java.time.OffsetDateTime;
 
@@ -27,4 +29,12 @@ public class BuildingEntity {
 
     @Column(nullable = false)
     private String type;
+
+    @ManyToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "address_id")
+    private AddressEntity address;
+
+    public BuildingResponse toResponse() {
+        return new BuildingResponse(buildingId, createTime, type);
+    }
 }

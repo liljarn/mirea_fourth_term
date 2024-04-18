@@ -23,8 +23,14 @@ dependencies {
     testImplementation("org.junit.jupiter:junit-jupiter-api:5.10.2")
     testImplementation("org.junit.jupiter:junit-jupiter-engine:5.10.2")
     testImplementation("org.junit.jupiter:junit-jupiter-params:5.10.2")
-    // https://mvnrepository.com/artifact/org.hibernate.orm/hibernate-core
-    implementation("org.hibernate.orm:hibernate-core:6.5.0.CR1")
+
+
+    //implementation("org.hibernate:hibernate-entitymanager:5.6.15.Final")
+    implementation("org.hibernate.orm:hibernate-core:6.4.4.Final")
+    // https://mvnrepository.com/artifact/org.springframework/spring-orm
+    implementation("org.springframework:spring-orm:6.1.6")
+    implementation("com.zaxxer:HikariCP:5.1.0")
+
     // https://mvnrepository.com/artifact/org.postgresql/postgresql
     implementation("org.postgresql:postgresql:42.7.3")
     //implementation("org.apache.logging.log4j:log4j-core:2.23.0")

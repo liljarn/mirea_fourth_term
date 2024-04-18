@@ -2,9 +2,7 @@ package ru.mirea.controller;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
-import ru.mirea.dto.AddAddressRequest;
-import ru.mirea.dto.AddressResponse;
-import ru.mirea.dto.RemoveAddressRequest;
+import ru.mirea.dto.*;
 import ru.mirea.service.AddressService;
 
 import java.util.List;
@@ -16,17 +14,37 @@ public class AddressController {
     private final AddressService addressService;
 
     @PostMapping
-    public void addAddress(@RequestBody AddAddressRequest request) {
-        addressService.addAddress(request);
+    public AddressResponse addAddress(@RequestBody AddAddressRequest request) {
+        return addressService.addAddress(request);
     }
 
     @DeleteMapping
-    public void deleteAddress(@RequestBody RemoveAddressRequest request) {
-        addressService.removeAddress(request);
+    public AddressResponse deleteAddress(@RequestBody RemoveAddressRequest request) {
+        return addressService.removeAddress(request);
     }
 
     @GetMapping
     public List<AddressResponse> getAddresses() {
         return addressService.getAddresses();
+    }
+
+    @GetMapping("/filtered")
+    public List<AddressResponse> getAddressesFiltered(@RequestParam String filteredBy, @RequestParam String value) {
+        return addressService.getAddressesFiltered(filteredBy, value);
+    }
+
+    @GetMapping("/{id}")
+    public AddressResponse getAddressById(@PathVariable Long id) {
+        return addressService.getAddressById(id);
+    }
+
+    @GetMapping("/buildings/{id}")
+    public List<BuildingResponse> getBuildings(@PathVariable Long id) {
+        return addressService.getBuildings(id);
+    }
+
+    @PostMapping("/buildings")
+    public void addBuilding(@RequestBody BuildingAddressRequest request) {
+        addressService.addBuilding(request.addressId(), request.buildingId());
     }
 }

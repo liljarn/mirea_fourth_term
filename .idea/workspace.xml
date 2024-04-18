@@ -5,11 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7eb7a936-546c-46bf-af7c-caae1e7b2183" name="Changes" comment="added homework">
-      <change afterPath="$PROJECT_DIR$/task14/src/main/java/ru/mirea/configuration/DatabaseConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task14/src/main/java/ru/mirea/dto/BuildingAddressRequest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/task11/src/main/resources/task12/testHashed.txt" beforeDir="false" afterPath="$PROJECT_DIR$/task11/src/main/resources/task12/testHashed.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/task14/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/task14/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task14/src/main/java/ru/mirea/configuration/DatabaseConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/task14/src/main/java/ru/mirea/configuration/DatabaseConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task14/src/main/java/ru/mirea/controller/AddressController.java" beforeDir="false" afterPath="$PROJECT_DIR$/task14/src/main/java/ru/mirea/controller/AddressController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task14/src/main/java/ru/mirea/controller/BuildingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/task14/src/main/java/ru/mirea/controller/BuildingController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task14/src/main/java/ru/mirea/dao/entity/AddressEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/task14/src/main/java/ru/mirea/dao/entity/AddressEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task14/src/main/java/ru/mirea/dao/entity/BuildingEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/task14/src/main/java/ru/mirea/dao/entity/BuildingEntity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/task14/src/main/java/ru/mirea/service/AddressService.java" beforeDir="false" afterPath="$PROJECT_DIR$/task14/src/main/java/ru/mirea/service/AddressService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task14/src/main/java/ru/mirea/service/BuildingService.java" beforeDir="false" afterPath="$PROJECT_DIR$/task14/src/main/java/ru/mirea/service/BuildingService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,6 +77,18 @@
       <autoReloadConfigurations>true</autoReloadConfigurations>
     </scriptDefinition>
   </component>
+  <component name="KubernetesApiProvider">{
+  &quot;contexts&quot;: [
+    {
+      &quot;name&quot;: &quot;minikube&quot;,
+      &quot;originalNamespace&quot;: &quot;default&quot;
+    }
+  ],
+  &quot;isMigrated&quot;: true
+}</component>
+  <component name="KubernetesSettings">
+    <option name="contextName" value="minikube" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -120,7 +137,7 @@
       <recent name="C:\Users\liljarn\IdeaProjects\MireaTerm4\task14\src\main\resources\templates" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.AppStarter">
+  <component name="RunManager" selected="Gradle.MireaTerm4 [build]">
     <configuration name="Main" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ru.mirea.task11.Main" />
       <module name="task11.main" />
@@ -158,18 +175,27 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ru.mirea.task12.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ru.mirea.task12.Main" />
-      <module name="task11.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ru.mirea.task12.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+    <configuration name="MireaTerm4 [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="build" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
     </configuration>
     <configuration name="AppStarter (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="task11.main" />
@@ -265,11 +291,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.MireaTerm4 [build]" />
         <item itemvalue="Spring Boot.AppStarter (2)" />
         <item itemvalue="Docker.task14/compose.yml.postgresql: Compose Deployment" />
         <item itemvalue="Spring Boot.AppStarter (1)" />
         <item itemvalue="Application.ru.mirea.Main" />
-        <item itemvalue="Application.ru.mirea.task12.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -298,6 +324,7 @@
       <workItem from="1712230891520" duration="87000" />
       <workItem from="1712267042735" duration="19000" />
       <workItem from="1712419126613" duration="28000" />
+      <workItem from="1713427354766" duration="285000" />
     </task>
     <task id="LOCAL-00001" summary="task2 done">
       <option name="closed" value="true" />
