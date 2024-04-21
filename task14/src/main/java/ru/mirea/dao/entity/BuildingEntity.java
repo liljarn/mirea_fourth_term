@@ -1,6 +1,7 @@
 package ru.mirea.dao.entity;
 
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -14,6 +15,7 @@ import java.time.OffsetDateTime;
 @Setter
 @Getter
 @NoArgsConstructor
+@AllArgsConstructor
 public class BuildingEntity {
     public BuildingEntity(String type) {
         this.type = type;

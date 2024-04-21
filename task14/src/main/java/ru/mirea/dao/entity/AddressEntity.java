@@ -1,6 +1,7 @@
 package ru.mirea.dao.entity;
 
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -14,6 +15,7 @@ import java.util.List;
 @Setter
 @Getter
 @NoArgsConstructor
+@AllArgsConstructor
 public class AddressEntity {
     public AddressEntity(String addressText, Long zipCode) {
         this.addressText = addressText;

@@ -1,25 +1,20 @@
-package ru.mirea.service;
+package ru.mirea.service.building;
 
 import jakarta.annotation.PostConstruct;
 import jakarta.persistence.criteria.CriteriaBuilder;
 import lombok.RequiredArgsConstructor;
-import lombok.extern.log4j.Log4j2;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.springframework.stereotype.Service;
-import ru.mirea.dao.entity.AddressEntity;
 import ru.mirea.dao.entity.BuildingEntity;
 import ru.mirea.dto.AddBuildingRequest;
-import ru.mirea.dto.AddressResponse;
 import ru.mirea.dto.BuildingResponse;
 import ru.mirea.dto.RemoveBuildingRequest;
 
-import java.util.Collections;
 import java.util.List;
 
-@Service
 @RequiredArgsConstructor
-public class BuildingService {
+public class HibernateBuildingService implements BuildingService {
     private final SessionFactory sessionFactory;
     private Session session;
 

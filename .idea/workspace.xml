@@ -4,17 +4,37 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7eb7a936-546c-46bf-af7c-caae1e7b2183" name="Changes" comment="added homework">
-      <change afterPath="$PROJECT_DIR$/task14/src/main/java/ru/mirea/dto/BuildingAddressRequest.java" afterDir="false" />
+    <list default="true" id="7eb7a936-546c-46bf-af7c-caae1e7b2183" name="Changes" comment="task17">
+      <change afterPath="$PROJECT_DIR$/task14/src/main/java/ru/mirea/configuration/SecurityConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task14/src/main/java/ru/mirea/configuration/ServiceConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task14/src/main/java/ru/mirea/controller/RegistrationController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task14/src/main/java/ru/mirea/dao/entity/UserEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task14/src/main/java/ru/mirea/dao/repository/AddressRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task14/src/main/java/ru/mirea/dao/repository/BuildingRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task14/src/main/java/ru/mirea/dao/repository/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task14/src/main/java/ru/mirea/dto/UserRegistrationRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task14/src/main/java/ru/mirea/service/TimeAspect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task14/src/main/java/ru/mirea/service/address/AddressService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task14/src/main/java/ru/mirea/service/address/JpaAddressService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task14/src/main/java/ru/mirea/service/building/BuildingService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task14/src/main/java/ru/mirea/service/building/JpaBuildingService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task14/src/main/java/ru/mirea/service/directory_saver/SaverService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task14/src/main/java/ru/mirea/service/email/DefaultEmailService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task14/src/main/java/ru/mirea/service/email/EmailService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task14/src/main/java/ru/mirea/service/user/DefaultUserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task14/src/main/resources/logback.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task14/src/main/resources/templates/registration.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task14/src/test/java/AddressServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/task14/src/test/java/UserServiceTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/task14/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/task14/build.gradle.kts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/task14/src/main/java/ru/mirea/configuration/DatabaseConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/task14/src/main/java/ru/mirea/configuration/DatabaseConfiguration.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/task14/src/main/java/ru/mirea/controller/AddressController.java" beforeDir="false" afterPath="$PROJECT_DIR$/task14/src/main/java/ru/mirea/controller/AddressController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/task14/src/main/java/ru/mirea/controller/BuildingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/task14/src/main/java/ru/mirea/controller/BuildingController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/task14/src/main/java/ru/mirea/dao/entity/AddressEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/task14/src/main/java/ru/mirea/dao/entity/AddressEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/task14/src/main/java/ru/mirea/dao/entity/BuildingEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/task14/src/main/java/ru/mirea/dao/entity/BuildingEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/task14/src/main/java/ru/mirea/service/AddressService.java" beforeDir="false" afterPath="$PROJECT_DIR$/task14/src/main/java/ru/mirea/service/AddressService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/task14/src/main/java/ru/mirea/service/BuildingService.java" beforeDir="false" afterPath="$PROJECT_DIR$/task14/src/main/java/ru/mirea/service/BuildingService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task14/src/main/java/ru/mirea/service/AddressService.java" beforeDir="false" afterPath="$PROJECT_DIR$/task14/src/main/java/ru/mirea/service/address/HibernateAddressService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task14/src/main/java/ru/mirea/service/BuildingService.java" beforeDir="false" afterPath="$PROJECT_DIR$/task14/src/main/java/ru/mirea/service/building/HibernateBuildingService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task14/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/task14/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,6 +61,9 @@
         <task path="$PROJECT_DIR$/task11">
           <activation />
         </task>
+        <task path="$PROJECT_DIR$/task14">
+          <activation />
+        </task>
         <projects_view>
           <option name="groupModules" value="false" />
           <tree_state>
@@ -54,10 +77,11 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Dockerfile" />
         <option value="module-info" />
         <option value="Record" />
+        <option value="Interface" />
+        <option value="HTML File" />
         <option value="Class" />
       </list>
     </option>
@@ -103,6 +127,7 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
     &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
     &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
     &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
@@ -137,7 +162,7 @@
       <recent name="C:\Users\liljarn\IdeaProjects\MireaTerm4\task14\src\main\resources\templates" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.MireaTerm4 [build]">
+  <component name="RunManager" selected="Gradle.AddressServiceTest.addAddressShouldReturnRegisteredAddress">
     <configuration name="Main" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ru.mirea.task11.Main" />
       <module name="task11.main" />
@@ -162,66 +187,125 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ru.mirea.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ru.mirea.Main" />
-      <module name="task11.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ru.mirea.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MireaTerm4 [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="AddressServiceTest.addAddressShouldReturnRegisteredAddress" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/task14" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
+        <option name="scriptParameters" value="" />
         <option name="taskDescriptions">
           <list />
         </option>
         <option name="taskNames">
           <list>
-            <option value="build" />
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;AddressServiceTest.addAddressShouldReturnRegisteredAddress&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
       </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
       <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
       <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>false</RunAsTest>
+      <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="AppStarter (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="task11.main" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="ru.mirea.task13.AppStarter" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ru.mirea.task13.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+    <configuration name="AddressServiceTest.getAllDoctorsShouldReturnAllDoctors" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/task14" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;AddressServiceTest.getAllDoctorsShouldReturnAllDoctors&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
     </configuration>
-    <configuration name="AppStarter (2)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="task14.main" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="ru.mirea.AppStarter" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ru.mirea.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+    <configuration name="AddressServiceTest.getByIdShouldReturnDoctor" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/task14" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;AddressServiceTest.getByIdShouldReturnDoctor&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="AddressServiceTest.registerDoctorShouldReturnRegisteredDoctor" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/task14" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;AddressServiceTest.registerDoctorShouldReturnRegisteredDoctor&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="UserServiceTest.loadUserByUsernameShouldReturnUser" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/task14" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;UserServiceTest.loadUserByUsernameShouldReturnUser&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
     </configuration>
     <configuration name="AppStarter" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="task11.main" />
@@ -276,26 +360,13 @@
       </deployment>
       <method v="2" />
     </configuration>
-    <configuration name="task14/compose.yml.postgresql: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
-      <deployment type="docker-compose.yml">
-        <settings>
-          <option name="services">
-            <list>
-              <option value="postgresql" />
-            </list>
-          </option>
-          <option name="sourceFilePath" value="task14/compose.yml" />
-        </settings>
-      </deployment>
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.MireaTerm4 [build]" />
-        <item itemvalue="Spring Boot.AppStarter (2)" />
-        <item itemvalue="Docker.task14/compose.yml.postgresql: Compose Deployment" />
-        <item itemvalue="Spring Boot.AppStarter (1)" />
-        <item itemvalue="Application.ru.mirea.Main" />
+        <item itemvalue="Gradle.AddressServiceTest.addAddressShouldReturnRegisteredAddress" />
+        <item itemvalue="Gradle.AddressServiceTest.registerDoctorShouldReturnRegisteredDoctor" />
+        <item itemvalue="Gradle.AddressServiceTest.getByIdShouldReturnDoctor" />
+        <item itemvalue="Gradle.AddressServiceTest.getAllDoctorsShouldReturnAllDoctors" />
+        <item itemvalue="Gradle.UserServiceTest.loadUserByUsernameShouldReturnUser" />
       </list>
     </recent_temporary>
   </component>
@@ -324,7 +395,12 @@
       <workItem from="1712230891520" duration="87000" />
       <workItem from="1712267042735" duration="19000" />
       <workItem from="1712419126613" duration="28000" />
-      <workItem from="1713427354766" duration="285000" />
+      <workItem from="1713427354766" duration="3885000" />
+      <workItem from="1713464888071" duration="18000" />
+      <workItem from="1713526540965" duration="7140000" />
+      <workItem from="1713614905405" duration="11941000" />
+      <workItem from="1713658302966" duration="6646000" />
+      <workItem from="1713707478641" duration="8335000" />
     </task>
     <task id="LOCAL-00001" summary="task2 done">
       <option name="closed" value="true" />
@@ -374,7 +450,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712218126795</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="task17">
+      <option name="closed" value="true" />
+      <created>1713427955239</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1713427955239</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -400,6 +484,7 @@
     <MESSAGE value="small changes" />
     <MESSAGE value="task3 done" />
     <MESSAGE value="added homework" />
-    <option name="LAST_COMMIT_MESSAGE" value="added homework" />
+    <MESSAGE value="task17" />
+    <option name="LAST_COMMIT_MESSAGE" value="task17" />
   </component>
 </project>

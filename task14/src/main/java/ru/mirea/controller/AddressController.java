@@ -3,7 +3,7 @@ package ru.mirea.controller;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 import ru.mirea.dto.*;
-import ru.mirea.service.AddressService;
+import ru.mirea.service.address.AddressService;
 
 import java.util.List;
 

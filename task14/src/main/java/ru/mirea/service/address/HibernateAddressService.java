@@ -1,4 +1,4 @@
-package ru.mirea.service;
+package ru.mirea.service.address;
 
 import jakarta.annotation.PostConstruct;
 import jakarta.persistence.criteria.CriteriaBuilder;
@@ -15,9 +15,8 @@ import ru.mirea.dto.RemoveAddressRequest;
 
 import java.util.List;
 
-@Service
 @RequiredArgsConstructor
-public class AddressService {
+public class HibernateAddressService implements AddressService {
     private final SessionFactory sessionFactory;
     private Session session;
 
@@ -26,6 +25,7 @@ public class AddressService {
         session = sessionFactory.openSession();
     }
 
+    @Override
     public AddressResponse addAddress(AddAddressRequest request) {
         AddressEntity address = new AddressEntity(request.addressText(), request.zipCode());
         session.beginTransaction();
@@ -34,6 +34,7 @@ public class AddressService {
         return address.toResponse();
     }
 
+    @Override
     public AddressResponse getAddressById(Long id) {
         AddressEntity address = session.get(AddressEntity.class, id);
         if (address == null) {
@@ -42,6 +43,7 @@ public class AddressService {
         return address.toResponse();
     }
 
+    @Override
     public AddressResponse removeAddress(RemoveAddressRequest request) {
         AddressEntity address = session.get(AddressEntity.class, request.id());
         if (address == null) {
@@ -53,11 +55,13 @@ public class AddressService {
         return address.toResponse();
     }
 
+    @Override
     public List<AddressResponse> getAddresses() {
         return session.createQuery("select addr from AddressEntity addr", AddressEntity.class)
                 .getResultList().stream().map(AddressEntity::toResponse).toList();
     }
 
+    @Override
     public List<AddressResponse> getAddressesFiltered(String filteredBy, String value) {
         CriteriaBuilder builder = session.getCriteriaBuilder();
         var criteria = builder.createQuery(AddressEntity.class);
@@ -75,6 +79,7 @@ public class AddressService {
         return addresses;
     }
 
+    @Override
     public List<BuildingResponse> getBuildings(Long id) {
         AddressEntity address = session.get(AddressEntity.class, id);
         if (address == null) {
@@ -83,6 +88,7 @@ public class AddressService {
         return address.getBuildings().stream().map(BuildingEntity::toResponse).toList();
     }
 
+    @Override
     public void addBuilding(Long addressId, Long buildingId) {
         AddressEntity address = session.get(AddressEntity.class, addressId);
         if (address == null) {

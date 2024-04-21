@@ -5,7 +5,7 @@ import org.springframework.web.bind.annotation.*;
 import ru.mirea.dto.AddBuildingRequest;
 import ru.mirea.dto.BuildingResponse;
 import ru.mirea.dto.RemoveBuildingRequest;
-import ru.mirea.service.BuildingService;
+import ru.mirea.service.building.BuildingService;
 
 import java.util.List;
 

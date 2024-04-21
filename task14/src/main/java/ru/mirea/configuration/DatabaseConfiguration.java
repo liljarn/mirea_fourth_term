@@ -3,6 +3,7 @@ package ru.mirea.configuration;
 import com.zaxxer.hikari.HikariConfig;
 import com.zaxxer.hikari.HikariDataSource;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.orm.hibernate5.HibernateTransactionManager;
@@ -13,6 +14,7 @@ import javax.sql.DataSource;
 import java.util.Properties;
 
 @Configuration
+@ConditionalOnProperty(name = "orm-type", havingValue = "hibernate")
 public class DatabaseConfiguration {
 
     @Value("${spring.datasource.url}")
@@ -52,9 +54,4 @@ public class DatabaseConfiguration {
         transactionManager.setSessionFactory(factoryBean.getObject());
         return transactionManager;
     }
-
-//    @Bean
-//    public PatientService patientService() {
-//        return new HibernatePatientService(factoryBean(dataSource()).getObject());
-//    }
 }
